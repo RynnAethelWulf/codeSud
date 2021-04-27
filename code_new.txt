@@ -1,0 +1,6 @@
+uvm_pkg::uvm_status_e status;
+uvm_pkg::uvm_reg_data_t exp_reg_data;
+uvm_pkg::uvm_reg reg_ptr;
+uvm_pkg::uvm_reg_map reg_val_32_inst_map;
+uvm_pkg::uvm_reg_data_t read_reg_data[$]
+uvm_pkg::uvm_reg reg__poll_inst_map;
