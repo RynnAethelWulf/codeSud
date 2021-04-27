@@ -1,5 +1,3 @@
-import re
-from os import replace
 
 def main():
     replace_words = {
@@ -10,7 +8,7 @@ def main():
                     }
 
     with open("code.txt",'r') as rf:
-        with open("code_new.txt",'w',encoding='utf-8') as wf:
+        with open("code_updated.txt",'w',encoding='utf-8') as wf:
             line = rf.read()
             for word in line.split():
                 print(word)
