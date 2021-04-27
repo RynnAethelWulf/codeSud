@@ -1,0 +1,6 @@
+uvm_pkg::uvm_status_e status;
+uvm_pkg::uvm_reg_data_t reg_val_32=0;
+uvm_pkg::uvm_reg reg_val_32_inst;
+uvm_pkg::uvm_reg_map reg_val_32_inst_map;
+uvm_pkg::uvm_reg_data_t status;
+uvm_pkg::uvm_reg_data_t status;
