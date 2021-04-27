@@ -4,3 +4,7 @@ uvm_pkg::uvm_reg reg_val_32_inst;
 uvm_pkg::uvm_reg_map reg_val_32_inst_map;
 uvm_pkg::uvm_reg_data_t_read_field_vals[$];
 uvm_pkg::uvm_reg reg__poll_inst_map;
+
+// step : write_crd_port1
+reg_val_32_inst = disp.get_reg_by_name("DGO_MC_CRD_PORT1"); // Register: DGO_MC_CRD_PORT1
+reg_val_32 = (reg_val_32 & ~32'hffffffff) | 32'h10; // Reg: DGO_MC_CRD_PORT1, Bits: [31:0];
