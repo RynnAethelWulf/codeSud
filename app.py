@@ -1,4 +1,4 @@
-
+import re
 def main():
     # These are the word for replace in dictionary format
     replace_words = {
@@ -13,16 +13,26 @@ def main():
         with open("code_updated.txt",'w',encoding='utf-8') as wf:
             # read each line
             line = rf.read()
-            for word in line.split():
-                print(word)
-                try:
-                    # replacing word with correct words
-                    line = line.replace(word, replace_words[word])
-                except:
-                    pass
-                # At last writng to thge file
-            wf.write(line)
+            def replace():
+                for word in line.split():
+                    print(word)
+                    try:
+                        # replacing word with correct words
+                        line = line.replace(word, replace_words[word])
+                    except:
+                        pass
+                    # At last writng to thge file
+                wf.write(line)
+            def write_port():
+                for word in line.split():
 
+                    try:
+                        # replacing word with correct words
+                        line = line.replace(word, replace_words[word])
+                    except:
+                        pass
+                    # At last writng to thge file
+                wf.write(line)
 
 
 if __name__ == "__main__":
